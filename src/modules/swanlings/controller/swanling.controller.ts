@@ -6,7 +6,7 @@ import { SwanlingService } from '../service/swanling.service';
 export class SwanlingController {
   constructor(private readonly swanlingService: SwanlingService) {}
 
-  @Get('/version')
+  @Get('/health-check')
   checkAPI(): API {
     return {
       message: 'Hello from Swanling Service!',
