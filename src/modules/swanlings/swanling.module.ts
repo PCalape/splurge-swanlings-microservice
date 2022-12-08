@@ -10,4 +10,4 @@ import { SwanlingRepository } from './repository/swanling.repository';
   providers: [SwanlingService, SwanlingRepository],
   controllers: [SwanlingController],
 })
-export class TestDataModule {}
+export class SwanlingModule {}
