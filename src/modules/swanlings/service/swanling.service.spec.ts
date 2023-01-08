@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getModelToken } from '@nestjs/mongoose';
 import { SwanlingService } from './swanling.service';
-import { Swanling } from '@schemas/moment.schema';
+import { Swanling } from '@schemas/swanling.schema';
 
 const mockModel = {};
 

@@ -1,6 +1,6 @@
 import { Prop, raw, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { Document } from 'mongoose';
-import { MomentTypeEnum } from '@enums/moment-type.enum';
+import { SwanlingTypeEnum } from '@enums/swanling-type.enum';
 import { Asset } from '@enums/asset.dto';
 mongoose.set('debug', process.env.DB_LOGGING_FLAG === 'enabled');
 
@@ -67,8 +67,8 @@ export class Swanling {
 
   isTrending?: boolean;
 
-  @Prop({ enum: MomentTypeEnum, default: MomentTypeEnum.EGG })
-  stage?: MomentTypeEnum;
+  @Prop({ enum: SwanlingTypeEnum, default: SwanlingTypeEnum.EGG })
+  stage?: SwanlingTypeEnum;
 
   @Prop({ default: false })
   isExclusive?: boolean;
