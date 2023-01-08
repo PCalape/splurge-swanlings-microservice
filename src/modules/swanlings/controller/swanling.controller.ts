@@ -8,6 +8,7 @@ export class SwanlingController {
   constructor(private readonly swanlingService: SwanlingService) {}
 
   @Get('/health-check')
+  // @UseGuards(SwanlingGuard)
   checkAPI(): API {
     return {
       message: 'Hello from Swanling Service!',
