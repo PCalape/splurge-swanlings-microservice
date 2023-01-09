@@ -24,7 +24,7 @@ export class Swanling {
   @Prop()
   ownerId: string;
 
-  @Prop({ type: [{ type: mongoose.Schema.Types.Decimal128 }] })
+  @Prop()
   value?: number;
 
   @Prop()
