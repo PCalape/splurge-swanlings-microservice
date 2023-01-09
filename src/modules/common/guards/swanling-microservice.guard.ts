@@ -1,7 +1,6 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import { Observable } from 'rxjs';
-
-const TOKEN = 'swanling_microservice';
+import { TOKEN } from '../environment';
 
 @Injectable()
 export class SwanlingGuard implements CanActivate {
